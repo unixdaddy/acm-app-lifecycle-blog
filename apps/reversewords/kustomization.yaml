@@ -4,3 +4,4 @@ bases:
 - github.com/mvazquezc/acm-testing/apps/reversewords?ref=config
 patchesStrategicMerge:
 - overlays/deployment.yaml
+- overlays/service.yaml
