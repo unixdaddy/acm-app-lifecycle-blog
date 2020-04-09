@@ -1,0 +1,4 @@
+namespace: reverse-words
+resources:
+- deployment.yaml
+- service.yaml
