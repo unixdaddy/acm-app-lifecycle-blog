@@ -1,0 +1,9 @@
+namespace: reverse-words-stage
+commonLabels:
+  app: reversewords-dev-app
+bases:
+- github.com/mvazquezc/acm-testing/apps/reversewords?ref=config
+resources:
+- base/namespace.yaml
+patchesStrategicMerge:
+- overlays/deployment.yaml
