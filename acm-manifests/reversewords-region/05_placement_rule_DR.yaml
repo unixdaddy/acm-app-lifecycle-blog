@@ -1,0 +1,17 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: us-eu-region-clusters
+  namespace: reverse-words-region
+spec:
+  clusterConditions:
+   - type: OK
+  clusterSelector:
+    matchExpressions:
+    - key: region
+      operator: In
+      values:
+      - EU
+      - US
+    matchLabels: {}
+  clusterReplicas: 1
