@@ -6,12 +6,11 @@ metadata:
   labels:
     app: reversewords-pro-app
   annotations:
-    apps.open-cluster-management.io/github-path: apps/reversewords/
-    apps.open-cluster-management.io/github-branch: prod
+    apps.open-cluster-management.io/git-path: apps/reversewords/
+    apps.open-cluster-management.io/git-branch: prod
 spec:
-  channel: open-cluster-management/acm-app-lifecycle-blog
+  channel: open-cluster-management/acm-gitops-github
   placement:
     placementRef:
       kind: PlacementRule
       name: production-clusters
-

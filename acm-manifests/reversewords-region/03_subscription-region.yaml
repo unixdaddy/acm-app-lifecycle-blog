@@ -6,8 +6,8 @@ metadata:
   labels:
     app: reversewords-region-app
   annotations:
-    apps.open-cluster-management.io/github-path: apps/reversewords/
-    apps.open-cluster-management.io/github-branch: prod
+    apps.open-cluster-management.io/git-path: apps/reversewords/
+    apps.open-cluster-management.io/git-branch: prod
 spec:
   channel: open-cluster-management/acm-app-lifecycle-blog
   placement:

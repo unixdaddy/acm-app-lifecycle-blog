@@ -5,7 +5,8 @@ metadata:
   namespace: reverse-words-region
 spec:
   clusterConditions:
-   - type: OK
+    - type: "ManagedClusterConditionAvailable"
+      status: "True"
   clusterSelector:
     matchExpressions: []
     matchLabels:

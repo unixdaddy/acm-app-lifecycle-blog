@@ -5,8 +5,9 @@ metadata:
   namespace: reverse-words-stage
 spec:
   clusterConditions:
-   - type: OK
+    - type: "ManagedClusterConditionAvailable"
+      status: "True"
   clusterSelector:
     matchExpressions: []
     matchLabels:
-      env: "dev"
+      environment: "dev"
